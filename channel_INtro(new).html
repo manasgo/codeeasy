@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Channel Intro</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Otomanopee+One& display=swap" rel="stylesheet">
+<style>
+* {
+  box-sizing: border-box;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none;
+  font-family: 'Otomanopee One', sans-serif;
+}
+body {
+  padding: 0; margin: 0;
+  background: #e3edf7;
+
+}
+  #main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .WelcomeTxt, .name {
+    opacity: 0.6;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    margin: 0 auto 10px auto;
+  }
+
+  .name span:nth-of-type(1){
+    animation-delay: 2s;
+  }
+  .name span:nth-of-type(2){
+    animation-delay: 2.10s;
+  }
+  .name span:nth-of-type(3){
+    animation-delay: 2.15s;
+  }
+  .name span:nth-of-type(4){
+    animation-delay: 2.20s;
+  }
+  .name span:nth-of-type(5){
+    animation-delay: 2.25s;
+  }
+    .name span {
+    display: inline-block;
+    font-size: 1.4rem;
+    color: green;
+    text-shadow:  1px 1px #ccc,
+                 -1px -1px #fff;
+    animation: manasAnm 0.6s ease-in forwards;
+  }
+  @keyframes manasAnm {
+    0%{transform: scale(1);}
+    50%{transform: scale(1.5);}
+    100%{transform: scale(1);}
+  }
+  
+  
+  .animate span:nth-of-type(1) { /* C */
+    color: #ffbb99;
+	animation-delay: 2s;
+}
+  .animate span:nth-of-type(2) { /* o */
+	animation-delay: 2.10s;
+}
+.animate span:nth-of-type(3) { /* d */
+	animation-delay: 2.15s;
+}
+.animate span:nth-of-type(4) { /* e */
+	animation-delay: 2.25s;
+}
+.animate span:nth-of-type(5) { /* E */
+	animation-delay: 2.25s;
+	color: #ffbb99;
+}
+.animate span:nth-of-type(6) { /* a */
+	animation-delay: 2.30s;
+}
+.animate span:nth-of-type(7) { /* s */
+	animation-delay: 2.35s;
+}
+.animate span:nth-of-type(8) { /* y */
+	animation-delay: 2.40s;
+}
+.animate {
+  display: flex;
+  margin-top: -10px
+  
+}
+/* 
+.animate span {
+  font-size: 5rem;
+	background-color: #c3d9ee;
+    transform: scale(1);
+    color: transparent;
+    text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
+    -webkit-background-clip: text;
+      -moz-background-clip: text;
+          background-clip: text;
+	animation: leftRight 1s ease-in forwards;
+	margin: 1px;
+} */
+.animate span{
+  font-size: 5rem;
+  color: #e3edf7;
+  margin: 1px;
+  text-shadow:  1px 1px #ccc,
+                -1px -1px #fff;
+  animation: leftRight 0.6s ease-in forwards;
+}
+@keyframes leftRight {
+  0% {
+    background-color: transparent;
+    transform: scale(1);
+  }
+	25% {
+		color: #e3edf7;
+		background: transparent;
+		text-shadow: 2px 2px rgba(0,0,0,0.3), 3px 3px rgba(0,0,0,0.3), 4px 4px rgba(0,0,0,0.3), 5px 5px rgba(0,0,0,0.2),
+		-2px -2px rgba(255, 255, 255, 0.6), -2px -2px rgba(255, 255, 255, 0.3);
+	}
+
+	75% {
+		transform: scale(1.4);
+		color: #e3edf7;
+		background: transparent;
+		text-shadow: 6px 6px 2px rgba(0,0,0,0.3), 8px 8px 2px rgba(0,0,0,0.3), 10px 10px 2px rgba(0,0,0,0.3),
+    -2px -2px rgba(255, 255, 255, 0.6), -2px -2px rgba(255, 255, 255, 0.3);
+	}
+
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+</style>
+</head>
+<body>
+  <div id="main">
+    <p class="name">Hello Guys I am <span>M</span><span>a</span><span>n</span><span>a</span><span>s</span>
+    </p>
+    <p class="WelcomeTxt">Welcome to our channel</p>
+    
+    <h1 class="channelName animate">
+      <span class="C">C</span><span class="o">o</span><span class="d">d</span><span class="e">e</span><span class="E">E</span><span class="a">a</span><span class="s">s</span><span class="y">y</span>
+      </h1>
+    
+  </div>
+  
+  
+<script>
+
+</script>
+</body>
+</html>
