@@ -43,12 +43,13 @@ h1 {
   padding: 3px;
  text-shadow: 0.5px 0.5px 1px #000;
 }
-#studies table, #tecEd table {
+#studies table, #tecEd table, #otherQul table {
   width: 100%;
   border-collapse: collapse;
 }
 #studies table th,
-#studies table td {
+#studies table td,
+#otherQul table td{
   border: 1px solid #d2d2d2;
   text-align: center;
   padding: 4px;
@@ -301,7 +302,6 @@ summary {
   
   
 <div id="outerContent">
- <div id="chBox">without colour<input type="checkbox" id="cvType" name="simpleORnot" value=checked></div>
   <button onclick="prtPdf()">Print</button>
 
   <details><summary>how to change photo?</summary>
@@ -332,10 +332,6 @@ document.getElementById("selfSign").addEventListener("click", function(){
 
 // for without color print
 function prtPdf() {
-  var myCv = document.getElementById("cvType").checked;
-  if(myCv == true){
-    document.getElementById("targetSheet").href = "style.css";
-  }
   document.getElementById("outerContent").style.display = "none";
       window.print();
 
