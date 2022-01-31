@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<style type="text/css">
+@media print, screen {
+* {
+  box-sizing: border-box;
+   -webkit-print-color-adjust: exact; 
+}
+#main{
+  font-size: 12px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+#tQs {
+  background: #ffb3b3;
+  padding: 5px;
+}
+#tQs p{
+  font-weight: bold;
+}
+#tQs ul{
+  list-style-type: upper-alpha;
+  background: #ffe5e5;
+  padding: 0 30px;
+}
+#tQs ul li{
+  padding: 4px 2px;
+}
+#printBtn {
+  display: block;
+  width: 50px;
+  padding: 5px;
+  margin: 3% auto;
+  background-image: linear-gradient(to right bottom, #667eea,#764ba2);
+  border-color: #ddd;
+  color: #fff;
+}
+
+}
+</style>
+</head>
+<body>
+  <div id="main">
+    
+  <div id="tQs">
+    <p>Q1) A body attach to the lower end of a vertical spring oscillates with time period of 1 sec. The time period when two such spring are connected one below another is approximately</p>
+    <ul>
+      <li>0.7 sec</li>
+      <li>sec</li>
+      <li>1.4 sec</li>
+      <li>2 sec</li>
+    </ul>
+  </div>
+  
+  <div id="tQs">
+    <p>Q2) When a spring is stretched by 10cm, the potential energy stored is E. when the spring is stretched by 10cm more, the potential energy stored in the spring becomes </p>
+    <ul>
+      <li>2E</li>
+      <li>4E</li>
+      <li>6E</li>
+      <li>10E</li>
+    </ul>
+  </div>
+  
+ <div id="tQs">
+    <p>Q3) a bullet on penetrating 30 cm into its target loses its velocity by 50%. What additional distance will it penetrate into the target before it come to rest?</p>
+    <ul>
+      <li>30 cm</li>
+      <li>20 cm</li>
+      <li>10 cm</li>
+      <li>5 cm</li>
+    </ul>
+  </div>
+  
+ <div id="tQs">
+    <p>Q4) In uniform circular motion, the work done by the centripetal force in half the the rotation is equal to </p>
+    <ul>
+      <li>π mv²</li>
+      <li>2π mv²</li>
+      <li>2mv²</li>
+      <li>zero</li>
+    </ul>
+  </div>
+  
+ <div id="tQs">
+    <p>Q5) A rifle shoots a bullet of 60gm with a valocity of 50 m/s. The velocity of recoil of rifle is 2 m/s. The mass of rifle is </p>
+    <ul>
+      <li>3.0 kg</li>
+      <li>2.0 kg</li>
+      <li>1.5 kg</li>
+      <li>1.0 kg</li>
+    </ul>
+  </div>
+  
+ <div id="tQs">
+    <p>Q6) When a solid sphere, a hollow sphere, a ring and a dise all roll down the same inclined plane, the kinetic energy is maximum for</p>
+    <ul>
+      <li>ring</li>
+      <li>dise</li>
+      <li>solid sphere</li>
+      <li>hollow sphere</li>
+    </ul>
+  </div>
+ <div id="tQs">
+    <p>Q7) A balloon starts rising from the ground with an acceleration of 1.25 m/s 2. After 8 s, a stone is released from the balloon. The stone will</p>
+    <ul>
+      <li>cover a distance of 40 m</li>
+      <li>have a displacement of 50 m</li>
+      <li>reach the ground in 4 s</li>
+      <li>begin to move down after being released</li>
+    </ul>
+  </div>
+ <div id="tQs">
+    <p>Q8) When a ceiling fan is switched on, it makes 10 rotations in the first 3 seconds. How many rotations will it make in the next 3 seconds? (Assume uniform angular acceleration.)</p>
+    <ul>
+      <li>10</li>
+      <li>20</li>
+      <li>30</li>
+      <li>40</li>
+    </ul>
+  </div>
+ <div id="tQs">
+    <p>Q9) Which of the following is not true for a region with a uniform electric field?</p>
+    <ul>
+      <li>It can have free charges.</li>
+      <li>It may have uniformly distributed charge.</li>
+      <li>It may contain dipoles.</li>
+      <li>None of the above.</li>
+    </ul>
+  </div>
+ <div id="tQs">
+    <p>Q10) ‘All charge on a conductor must reside only on its outer surface.’ This statement is true</p>
+    <ul>
+      <li>in all cases</li>
+      <li>for spherical conductors only (both solid and hollow)</li>
+      <li>for hollow spherical conductors only</li>
+      <li>for conductors which do not have any sharp points or corners</li>
+    </ul>
+  </div>
+  
+  
+  </div>
+  <button onclick="prtPdf()" id="printBtn">print</button>
+<script>
+ function prtPdf() {
+   document.getElementById("printBtn").style.display = "none";
+   window.print();
+ }
+</script>
+</body>
+</html>
