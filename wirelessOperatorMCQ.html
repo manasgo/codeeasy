@@ -8,7 +8,6 @@
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <style type="text/css">
-@media print, screen {
 * {
   box-sizing: border-box;
   -webkit-user-select: none; /* Safari */
@@ -16,6 +15,7 @@
   user-select: none; 
   -webkit-print-color-adjust: exact; 
 }
+
 #main{
   font-size: 16px;
 }
@@ -52,11 +52,40 @@
   border-color: #ddd;
   color: #fff;
 }
+/* for print */
+@media print{
+* {
+  box-sizing: border-box;
+  -webkit-print-color-adjust: exact; 
+}
+#main {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  font-size: 12px;
+}
+#tQs{
+  padding: 0 5px;
+  width: 100%;
+  height: min-content;
+  background: #d2d2d2;
+  margin: 1px;
+}
+#tQs p {
+  font-weight: bold;
+  width: 100%;
+}
+#tQs ul{
+  list-style-type: upper-alpha;
+  padding: 0 30px;
+  width: 100%;
+}
 
 }
+
 </style>
 </head>
 <body>
+   <button onclick="prtPdf()" id="printBtn">print</button>
   <div id="main">
     
   <div id="tQs">
@@ -391,8 +420,7 @@
   
   </div>
   
-  <div id="ans">&#128065;</div>
-  <button onclick="prtPdf()" id="printBtn">print</button>
+ 
 <script>
 
  function prtPdf() {
