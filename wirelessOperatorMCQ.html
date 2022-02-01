@@ -34,8 +34,17 @@
   padding: 4px 2px;
   
 }
-
-
+span {
+  color: #008000;
+  display: none;
+}
+#ans {
+  position: fixed;
+  top: 0;
+  left: 45%;
+  border-color: #ddd;
+  background: #f8cba2;
+}
 
 #printBtn {
   display: block;
@@ -58,7 +67,7 @@
     <ul>
       <li>0.7 sec</li>
       <li>sec</li>
-      <li>1.4 sec</li>
+      <li>1.4 sec <span>&#10004;</span></li>
       <li>2 sec</li>
     </ul>
   </div>
@@ -384,8 +393,12 @@
   </div>
   
   </div>
+  <button onclick="ans()" id="ans">&#128065;</button>
   <button onclick="prtPdf()" id="printBtn">print</button>
 <script>
+function ans() {
+  document.getElementsByTagName("span").style.display = "block";
+}
 
  function prtPdf() {
    document.getElementById("printBtn").style.display = "none";
