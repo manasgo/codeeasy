@@ -11,7 +11,10 @@
 @media print, screen {
 * {
   box-sizing: border-box;
-   -webkit-print-color-adjust: exact; 
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; 
+  -webkit-print-color-adjust: exact; 
 }
 #main{
   background: #ffb3b3;
@@ -38,15 +41,15 @@ span {
   color: #008000;
   display: none;
 }
-#ans:hover #tQs span{
-  display: block;
-}
 #ans {
   position: fixed;
   top: 0;
   left: 45%;
-  border-color: #ddd;
+  padding: 2px;
   background: #f8cba2;
+}
+#ans:hover{
+  display: none;
 }
 
 #printBtn {
@@ -396,7 +399,8 @@ span {
   </div>
   
   </div>
-  <button id="ans">&#128065;</button>
+  
+  <div id="ans">&#128065;</div>
   <button onclick="prtPdf()" id="printBtn">print</button>
 <script>
 
