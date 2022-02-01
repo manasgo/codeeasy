@@ -38,6 +38,9 @@ span {
   color: #008000;
   display: none;
 }
+#ans:hover #tQs span{
+  display: block;
+}
 #ans {
   position: fixed;
   top: 0;
@@ -67,7 +70,7 @@ span {
     <ul>
       <li>0.7 sec</li>
       <li>sec</li>
-      <li>1.4 sec <span class="correct">&#10004;</span></li>
+      <li>1.4 sec <span>&#10004;</span></li>
       <li>2 sec</li>
     </ul>
   </div>
@@ -78,7 +81,7 @@ span {
       <li>2E</li>
       <li>4E</li>
       <li>6E</li>
-      <li>10E <span class="correct">&#10004;</span></li>
+      <li>10E <span>&#10004;</span></li>
     </ul>
   </div>
   
@@ -393,13 +396,9 @@ span {
   </div>
   
   </div>
-  <button onclick="ans()" id="ans">&#128065;</button>
+  <button id="ans">&#128065;</button>
   <button onclick="prtPdf()" id="printBtn">print</button>
 <script>
-function ans() {
-  var target = document.getElementById("tQs");
-  target.getElementsByTagName("span").style.display = "inline";
-}
 
  function prtPdf() {
    document.getElementById("printBtn").style.display = "none";
