@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>wirelessOperator(MATH)MCQ</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<!--for math format-->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<style type="text/css">
+* {
+  box-sizing: border-box;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; 
+  -webkit-print-color-adjust: exact; 
+}
+
+#main{
+  font-size: 16px;
+}
+#tQs {
+  padding: 5px;
+  height: 100vh;
+}
+#tQs p{
+  font-weight: bold;
+  width: 60%;
+}
+#tQs ul{
+  list-style-type: upper-alpha;
+  padding: 0 30px;
+  width: 50%;
+}
+#tQs ul li{
+  padding: 4px 2px;
+}
+#tQs span {
+  color: #008000;
+  display: none;
+}
+#tQs ul:hover span{
+  display: inline;
+}
+
+#printBtn {
+  display: block;
+  width: 50px;
+  padding: 5px;
+  margin: 3% auto;
+  background-image: linear-gradient(to right bottom, #667eea,#764ba2);
+  border-color: #ddd;
+  color: #fff;
+}
+#tQs img {
+  float: right;
+  position: relative;
+  left: -40%;
+  top: 20px;
+}
+#tQs .table {
+  border-collapse: collapse;
+  font-size: 14px;
+}
+.table th {background: #008000; color: #fff;}
+.table th,td{
+  padding: 3px;
+  border: 1px solid #ddd;
+}
+/* for print */
+@media print{
+* {
+  box-sizing: border-box;
+  -webkit-print-color-adjust: exact; 
+}
+#main {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  font-size: 12px;
+}
+#tQs{
+  padding: 0 5px;
+  width: 100%;
+  height: min-content;
+  background: #f2f2f2;
+  margin: 1px;
+}
+#tQs p {
+  font-weight: bold;
+  width: 100%;
+}
+#tQs ul{
+  list-style-type: upper-alpha;
+  padding: 0 30px;
+  width: 100%;
+}
+#tQs span {
+  color: #008000;
+  display: inline;
+}
+
+}
+
+</style>
+</head>
+<body>
+   <button onclick="prtPdf()" id="printBtn">print</button>
+  <div id="main">
+    
+  <div id="tQs">
+    <p>1) The number of digit in 20³⁰¹ (given log₁₀2 = 0.3010 is)</p>
+    <ul>
+      <li>602</li>
+      <li>301</li>
+      <li>392 <span></span></li>
+      <li>391</li>
+    </ul>
+  </div>
+  <div id="tQs">
+    <p>2) \[\int^1_0 log(\frac{1}{x}-1) = \]</p>
+    <ul>
+      <li>1</li>
+      <li>0<span></span></li>
+      <li>2</li>
+      <li>none of these</li>
+    </ul>
+  </div>
+  <div id="tQs">
+    <p>3) if [x] denotes the greatest integer less than or equal to x, then the value of the integral \(\int^2_0 x^2 [x] dx\) equals </p>
+    <ul>
+      <li>5/3</li>
+      <li>7/3 <span></span></li>
+      <li>8/3</li>
+      <li>4/3</li>
+    </ul>
+  </div>
+  <div id="tQs">
+    <p>4) The value of \[\lim_{x\to 2} \int^x_2 \frac{3t^2}{x-2} dt\] is</p>
+    <ul>
+      <li>10</li>
+      <li>12 <span></span></li>
+      <li>8</li>
+      <li>16</li>
+    </ul>
+  </div>
+  <div id="tQs">
+    <p>29) </p>
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+  <div id="tQs">
+    <p>30) </p>
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+  <div id="tQs">
+    <p>31) </p>
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+  <div id="tQs">
+    <p>32) </p>
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+  <div id="tQs">
+    <p>33) </p>
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+  <div id="tQs">
+    <p>34) </p>
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+  <div id="tQs">
+    <p>35) </p>
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+  
+  </div>
+  
+ 
+<script>
+
+ function prtPdf() {
+   document.getElementById("printBtn").style.display = "none";
+   window.print();
+ }
+</script>
+</body>
+</html>
