@@ -119,7 +119,11 @@ details{
 summary {
  color: #0645ad;
 }
-
+@media print{
+  #outerContent{
+    display: none;
+  }
+}
 </style>
 </head>
 <body onload="alert('just click and edit &#9997;');">
@@ -302,7 +306,7 @@ summary {
   
   
 <div id="outerContent">
-  <button onclick="prtPdf()">Print</button>
+  <button onclick="window.print();">Print</button>
 
   <details><summary>how to change photo?</summary>
   &#8658; clicking on the image will open a prompt box where will be asked to enter link of the image, you have to enter the image link.<br><br>
@@ -330,11 +334,7 @@ document.getElementById("selfSign").addEventListener("click", function(){
   document.getElementById("selfSign").src = signLink;
 });
 
-// for without color print
-function prtPdf() {
-  document.getElementById("outerContent").style.display = "none";
-      window.print();
-}
+
 
 </script>
 </body>
