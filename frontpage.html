@@ -128,7 +128,11 @@ button {
   float: right;
   right: 40px;
 }
-
+@media print {
+  button {
+    display: none;
+  }
+}
 </style>
 </head>
 <body id="bdy" contenteditable="true" onload="window.alert('just click on the text and edit');">
@@ -213,7 +217,7 @@ button {
 
 <script>
   function prt(){
-    document.getElementById("btn").style.display="none";
+   // document.getElementById("btn").style.display="none";
     window.print();
   }
 </script>
