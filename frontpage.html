@@ -130,8 +130,14 @@ button {
   float: right;
   right: 40px;
 }
+#outerPart a {
+  color: #007aff;
+  font-size: 20px;
+  margin: 10% auto;
+}
+
 @media print {
-  button {
+  #outerPart {
     display: none;
   }
 }
@@ -232,8 +238,11 @@ button {
 	</tr>
 
 	</table>
-	<button onclick="window.print();" id="btn" contenteditable="false">print</button>
-
+	
+	<div id="outerPart">
+	  <a href="https://manasgo.github.io/codeeasy/LandscapeFrontPage.html" target="_blank">Landscape Front page</a>
+	<button onclick="window.print();" id="btn">print</button>
+</div>
 </body>
 
 <script>
